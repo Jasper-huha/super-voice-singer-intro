@@ -966,7 +966,14 @@ a {
 }
 
 .company-card {
-  grid-template-rows: 330px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+/* Explicit pixel height: iOS Safari does not reliably resolve a percentage
+   height on a grid item against its row, which let this image expand and
+   swallow the copy below it. */
+.company-card > img {
+  height: 330px;
 }
 
 .jasper-card {
@@ -1340,8 +1347,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .company-card {
-    grid-template-rows: 250px 1fr;
+  .company-card > img {
+    height: 250px;
   }
 
   .jasper-card > img {
