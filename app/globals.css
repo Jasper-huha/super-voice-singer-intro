@@ -959,21 +959,28 @@ a {
 
 .team-card {
   display: grid;
-  min-height: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--panel);
 }
 
+/* The company card is a plain vertical stack (image over copy), so it uses
+   flex with an explicit image height rather than grid rows. iOS Safari does
+   not reliably resolve percentage heights against a grid area, which
+   previously let the image expand and swallow the copy block below it.
+   Grid items already stretch by default, so no min-height: 100% is needed. */
 .company-card {
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Explicit pixel height: iOS Safari does not reliably resolve a percentage
-   height on a grid item against its row, which let this image expand and
-   swallow the copy below it. */
 .company-card > img {
+  flex: none;
   height: 330px;
+}
+
+.company-card > .team-card-copy {
+  flex: 1;
 }
 
 .jasper-card {
