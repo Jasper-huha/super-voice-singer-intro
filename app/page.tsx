@@ -88,7 +88,7 @@ export default function Home() {
           />
           <div className="hero-shade" aria-hidden="true" />
           <h1 id="hero-title" className="visually-hidden">
-            決戰超強音｜歌手合作計畫
+            決戰超強音
           </h1>
         </section>
 
@@ -321,7 +321,7 @@ export default function Home() {
         <div className="page-shell footer-inner">
           <div>
             <strong>決戰超強音</strong>
-            <span>華人音樂職業賽事聯盟 · 歌手合作計畫</span>
+            <span>華人音樂職業賽事聯盟</span>
           </div>
           <p>天合國際娛樂有限公司發起</p>
         </div>
