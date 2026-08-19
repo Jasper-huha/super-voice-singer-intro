@@ -11,7 +11,7 @@ const leagueFacts = [
   },
   {
     number: "03",
-    title: "每一位觀眾都是評審",
+    title: "多元的計分評審方式",
     copy: "專業評審、現場觀眾與線上觀眾共同為每一位選手評分。",
   },
   {
@@ -32,7 +32,7 @@ const developmentPaths = [
     copy: "每一次演唱都形成正式分數與戰績，讓能力與成長有清楚紀錄。",
   },
   {
-    title: "觀眾曝光",
+    title: "造勢曝光",
     copy: "完整演唱、賽事精華、人物故事與短影音，讓歌手持續被看見。",
   },
   {
@@ -66,10 +66,9 @@ export default function Home() {
 
       <header className="site-header" aria-label="主要導覽">
         <a className="brand" href="#top" aria-label="決戰超強音首頁">
-          <span className="brand-mark" aria-hidden="true">決</span>
+          <span className="brand-mark" aria-hidden="true">戰</span>
           <span className="brand-copy">
             <strong>決戰超強音</strong>
-            <small>歌手合作計畫</small>
           </span>
         </a>
         <nav>
@@ -88,21 +87,9 @@ export default function Home() {
             alt="歌手站在大型音樂競技舞台中央，面向滿場觀眾與四組戰隊燈光"
           />
           <div className="hero-shade" aria-hidden="true" />
-          <div className="hero-content page-shell">
-            <p className="eyebrow">CPML · 華人音樂職業賽事聯盟</p>
-            <h1 id="hero-title">
-              <span>決戰</span>
-              <span className="gold-text">超強音</span>
-            </h1>
-            <p className="hero-label">第一季・歌手合作計畫</p>
-            <p className="hero-lead">
-              讓歌手擁有可以持續比賽、持續演出、持續累積作品與市場價值的職業舞台。
-            </p>
-          </div>
-          <div className="hero-index" aria-hidden="true">
-            <span>SEASON 01</span>
-            <span>2026</span>
-          </div>
+          <h1 id="hero-title" className="visually-hidden">
+            決戰超強音｜歌手合作計畫
+          </h1>
         </section>
 
         <section className="origin section-space">
@@ -140,7 +127,7 @@ export default function Home() {
           <div className="page-shell">
             <div className="section-heading">
               <p className="section-kicker">THE LEAGUE IN MOTION</p>
-              <h2 id="league-title">《決戰超強音》——為歌手建立一條可持續發展的職業道路</h2>
+              <h2 id="league-title">決戰超強音 一個永續發展的職業賽事</h2>
               <p>固定戰隊、完整賽季、共同評分、音樂作品、影音內容與巡迴演出，共同構成一套可以持續累積的音樂職業賽事體系。</p>
             </div>
             <div className="fact-grid">
@@ -158,7 +145,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="scoring section-space" aria-labelledby="scoring-title">
+        <section className="scoring section-space" aria-label="賽事評分現場">
           <div className="page-shell scoring-grid">
             <figure className="image-frame scoring-image">
               <img
@@ -166,33 +153,7 @@ export default function Home() {
                 alt="歌手演唱時，現場觀眾透過手機共同參與評分，後方設有專業評審席"
                 loading="lazy"
               />
-              <figcaption>每一位觀眾的判斷，都將成為賽事結果的一部分。</figcaption>
             </figure>
-            <div className="scoring-copy">
-              <p className="section-kicker">EVERYONE HAS A VOICE</p>
-              <h2 id="scoring-title">每一位觀眾，都是評審。</h2>
-              <p className="scoring-lead">
-                每位選手演唱結束後，所有評分者手上都有<strong>從1分到10分的評分選項</strong>，必須為每一位歌手給出分數。經過三個評分群體的集體給分與加權，決定比賽結果。
-              </p>
-              <div className="weight-list" aria-label="規劃評分比重">
-                <div className="weight-item">
-                  <div><span>專業評審</span><strong>40%</strong></div>
-                  <span className="weight-track"><span style={{ width: "40%" }} /></span>
-                </div>
-                <div className="weight-item">
-                  <div><span>現場觀眾</span><strong>40%</strong></div>
-                  <span className="weight-track"><span style={{ width: "40%" }} /></span>
-                </div>
-                <div className="weight-item">
-                  <div><span>線上觀眾</span><strong>20%</strong></div>
-                  <span className="weight-track"><span style={{ width: "20%" }} /></span>
-                </div>
-              </div>
-              <p className="note">以上為現階段規劃比重，正式賽制將於執行階段確認。</p>
-              <p>
-                觀眾將完整聆聽每一位選手的演出，並依據歌唱技巧、音色、情感、舞台表現與個人感受給出分數。每一次評分都能實際反映在比賽結果之中，也讓歌手獲得更廣泛、更真實的觀眾回應。
-              </p>
-            </div>
           </div>
         </section>
 
@@ -231,7 +192,7 @@ export default function Home() {
 
             <div className="works-callout">
               <p className="section-kicker">SONGS BECOME ASSETS</p>
-              <h3>提供多元的發展，共同創造收入</h3>
+              <h3>創造多元發展</h3>
               <p>
                 聯盟將發展原創歌曲、AI協作歌曲、戰隊歌曲與個人作品，並推動錄音、發行與舞台演出。歌曲所形成的內容與權利資產，可在後續賽季、影音平台、演出及商業合作中持續發揮效益；同時也將爭取與華納、滾石等大型唱片公司及音樂產業夥伴合作。
               </p>
@@ -312,7 +273,7 @@ export default function Home() {
               現在加入計畫的歌手，有機會成為華人音樂職業賽事聯盟最早被看見、被培育並參與建立制度的一批選手，與隊長、評審及製作團隊一起創造《決戰超強音》的第一段歷史。
             </p>
             <blockquote>
-              如果你希望自己的聲音被更多人聽見，並持續累積舞台、作品、觀眾與市場價值，我們誠摯邀請你進一步了解《決戰超強音》。
+              讓你的聲音被更多人聽見，並持續累積舞台、作品、觀眾與市場價值，我們誠摯邀請您加入決戰超強音。
             </blockquote>
           </div>
         </section>
