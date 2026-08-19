@@ -1212,9 +1212,10 @@ footer {
   }
 
   .hero-shade {
-    background:
-      linear-gradient(0deg, rgba(4, 4, 9, 0.99) 0%, rgba(4, 4, 9, 0.9) 43%, rgba(4, 4, 9, 0.16) 83%),
-      linear-gradient(90deg, rgba(4, 4, 9, 0.62), rgba(4, 4, 9, 0.1));
+    /* Same reasoning as the desktop rule: the heavy scrim existed to keep the
+       hero copy readable. With no copy it only blacked out the photo, so keep
+       just the bottom blend into the page. */
+    background: linear-gradient(0deg, var(--bg) 0%, transparent 18%, rgba(2, 2, 7, 0.06) 60%);
   }
 
   .hero-content {
